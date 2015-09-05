@@ -28,6 +28,6 @@ About
 
 streamall accepts an array of streams, and returns a promise.
 
-It sets all the error events to promise reject, and resolves on the the `finish` event of the last stream.
+It sets all the stream error events to promise reject, and resolves on the the `finish` event of the last stream.
 
-Should work well with coroutines that yield with promises, and general thenables.
+Should work well with coroutines that accept yielded promises, and general thenables.
