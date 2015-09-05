@@ -1,6 +1,12 @@
 var Promise = require('es6-promise').Promise;
 module.exports = streamall;
 
+/*
+git remote add origin https://github.com/hollowdoor/streamall.git
+git push -u origin master
+npm publish
+*/
+
 function streamall(list){
     return new Promise(function(resolve, reject){
         var len = list.length;
@@ -19,8 +25,8 @@ function streamall(list){
 
 streamall.isStreamList = function(list){
     for(var i=0; i<list.length; i++){
-        if(!(Object.prototype.toString.call(list[i]) === '[object Object]'
-                    && typeof list[i].pipe === 'function')){
+        if(!(Object.prototype.toString.call(list[i]) === '[object Object]' &&
+            typeof list[i].pipe === 'function')){
             return false;
         }
     }
