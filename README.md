@@ -23,6 +23,21 @@ streamall([
 });
 ```
 
+streamall.isStreamList
+----------------------
+
+Check an array to see if all of the values are streams.
+
+If there is a value in the array that is not a stream, or the array is empty return false.
+
+```javascript
+if(streamall.isStreamList(array)){
+    //true
+}else{
+    //false
+}
+```
+
 About
 -----
 

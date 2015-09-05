@@ -24,6 +24,9 @@ function streamall(list){
 }
 
 streamall.isStreamList = function(list){
+    if(!list.length)
+        return false;
+    
     for(var i=0; i<list.length; i++){
         if(!(Object.prototype.toString.call(list[i]) === '[object Object]' &&
             typeof list[i].pipe === 'function')){
