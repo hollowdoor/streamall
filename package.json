@@ -1,6 +1,6 @@
 {
   "name": "streamall",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Process streams like Promise.all",
   "main": "index.js",
   "directories": {
@@ -19,5 +19,9 @@
   "license": "MIT",
   "dependencies": {
     "es6-promise": "^3.0.2"
-  }
+  },
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/hollowdoor/streamall.git"
+    }
 }
